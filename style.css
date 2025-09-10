@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#12263b;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 70px;
+    background-color: #0d1b2a;
+}
+nav img{
+    width: 120px;
+    height: 100px;      
+    margin-right: none;
+}
+nav .logo{
+    font-weight: bold;
+    display: flex;
+    font-size: 0.8em;
+    color: #00aaff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #00aaff;
+    border-bottom: 2px solidgreen;
+}
+
+nav .btn{
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav .btn:hover{
+    background-color: #008ecc;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px, 50px;
+}
+
+.hero .content{
+    max-width: 50%;
+}
+
+.hero .content p{
+    margin-left: 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.hero .content h1 {
+    margin-left: 50px;
+    font-size: 3em;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero h2{
+    margin-left: 50px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #00aaff;
+}
+
+.hero .content p{
+    font-size: 1em;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    height: 2px;
+}
+.hero p{
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #ccc;
+
+}
+
+.hero .sosial {
+    margin-right: 10px;
+    display: flex;
+    text-decoration: none;
+    color: #b21f1f;
+    gap: 2px;
+    font-size: 3em;
+}
+
+.hero .content h3{
+    margin-left: 30px;
+    padding: 2px 5px;
+    background-color: green;
+    display: inline-block;
+    border-radius: 10px;
+}
+.hero .sosial .facebook i{
+    margin-left: 30px;
+    color: rgb(218, 209, 209);
+    transition: 0.3s;
+    background-color: #0a99e1;
+    border-radius: 5px;
+}
+
+.hero .sosial .instagram i{
+    margin-left: 50px;
+    color: white;
+    transition: 0.5s;
+    background-color:  red;
+    border-radius: 5px;
+}
+
+.hero .sosial .linkedin i{
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(19, 141, 52);
+    border-radius: 5px;;
+}
+
+.penahan{
+    display: flex;
+    background-color: #0d2a12;
+    display: flex;
+    padding: 20px 50px;
+}
+
+.penahan ul .asal{
+    display: flex;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 0px;
+
+}
+.penahan ul li img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profil{
+    padding: 15px 50px;
+    background-color: #12263b;
+    text-align: center;
+}
+
+.profil .judul{
+    text-align: center;
+    padding: 30px 0px;
+    background-color: #0d1b2a;
+    margin-bottom: 20px;
+}
+
+.data{
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: rgb(35, 2, 2);
+}
+
+.profil .data{
+    font-size: 1.8em;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #b2cbbc;
+}
+
+.profil td{
+    font-size: 1.2em;
+    color: #12263b;
+    margin-top: 10px;
+}
+
+.data .biodata{
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.a, .a *{
+    background-color:#2b3c4d;
+    color:white !important;
+}
+
+.b, .b * {
+    background-color: #2b3c4d;
+    color: white !important;
+}
+
+
+.slide2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+    margin-top: 25px;
+    background-color: #0d1b2a;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 12px 30px;
+    }
+    .hero .content h1 {
+        font-size: 2.5em;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero .content h1 {
+        font-size: 2em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .sosial {
+        justify-content: center;
+    }
+
+    .profil table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        width: 80px;
+        height: auto;
+    }
+
+    .hero .content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h2 {
+        font-size: 1.2em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+    }
+
+    .profil table {
+        font-size: 0.8em;
+    }
+}
+
+
+.profil table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.profil td {
+    word-wrap: break-word;
+    padding: 10px;
+    text-align: left;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .profil table {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil table {
+        font-size: 0.8em;
+        max-width: 100%;
+    }
+}
